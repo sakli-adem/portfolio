@@ -15,7 +15,7 @@ import js2Img from '../../assets/certif/js2.png';
 import phpImg from '../../assets/certif/pp.png';
 import sqlImg from '../../assets/certif/sql.png';
 import englishImg from '../../assets/certif/english.png';
-
+import { Link } from 'react-router-dom';
 const CertPage = () => {
   const certificates = [
     { src: htImg, title: 'HTML5', link: htImg },
@@ -59,7 +59,7 @@ const CertPage = () => {
     <div className="cert-page">
       <nav className="nav-bar">
         <header id="fixedHeader">
-          <a className="btn btn-light" href="mycv.php#home">Go back</a>
+          <Link className="btn btn-light" to="/">Go back</Link>
         </header>
       </nav>
 

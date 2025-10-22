@@ -30,7 +30,7 @@ const Touch = () => {
         };
     
         // Send email via EmailJS with the correct templateParams
-        emailjs.send('service_u6rii7b', 'template_xwcwj88', templateParams, '8yrJktKuiZIDLTERv')
+        emailjs.send('service_wrkxg3y', 'template_xwcwj88', templateParams, '8yrJktKuiZIDLTERv')
         .then((response) => {
             setConfirmation('Message sent successfully!');
             setFormData({ name: '', email: '', message: '' }); // Clear form after submission

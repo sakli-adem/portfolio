@@ -1,6 +1,5 @@
-// export default App;
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Presentation from './components/Presentation/Presentation';
 import About from './components/About/About';

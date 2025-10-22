@@ -19,12 +19,13 @@ import mf1 from '../../assets/Project/Miroir/mf1.jpg';
 import usb from '../../assets/Project/Miroir/usb.jpg';
 import contr from '../../assets/Project/Miroir/contr.jpg';
 import helmi from '../../assets/Project/Miroir/helmi.png';
+import { Link } from 'react-router-dom';
 
 const Mirror = () => {
   return (
     <div>
       <header id="fixedHeader" className="fixed-header">
-        <a style={{ width: '200px' }} type="button" className="btn btn-light" href="../Project.html#Mirror">Go back</a>
+   <Link style={{ width: '200px' }} type="button" className="btn btn-light" to="/ProjectPage">Go back</Link>
       </header>
 
       <div className="container mirror-container">

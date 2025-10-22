@@ -20,10 +20,10 @@ const ProjectPage = () => {
   return (
     <div>
 <header className="updated-header">
-  <a
-    type="button"
-    className="updated-ButtonAnimation"
-    href="mycv.php#project"
+<Link
+  type="button"
+  className="updated-ButtonAnimation"
+  to="/#project" // Va à la page d'accueil ET scroll à l'ID #project
     style={{
       width: '200px',
       display: 'inline-block',
@@ -36,7 +36,7 @@ const ProjectPage = () => {
     }}
   >
     Go back
-  </a>
+  </Link>
 </header>
 
       {/* Section 1 */}
