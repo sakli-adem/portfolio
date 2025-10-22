@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import './ProjectPage.css';
 import mirrorImage from '../../assets/images/mirror.jpg';
 import radioImage from '../../assets/images/radio.png';
@@ -15,8 +15,13 @@ import wataniyaImage from '../../assets/images/wataniya.png';
 import jeuneImage from '../../assets/images/jeune.png';
 import everydaygro from '../../assets/images/everyday.jpg';
 import { Link } from 'react-router-dom';
-
+import { useEffect } from 'react';
 const ProjectPage = () => {
+
+
+    useEffect(() => {
+      window.scrollTo(0, 0); 
+    }, []);
   return (
     <div>
 <header className="updated-header">
@@ -78,6 +83,88 @@ const ProjectPage = () => {
           </div>
         </div>
       </section>
+
+
+
+
+
+            {/* Section 6 */}
+            <section className="updated-animated-section1">
+        <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
+          <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
+            <img className="updated-photoP" src={everydaygro} style={{ height: '100%', width: '100%', borderRadius:'0%' }} />
+          </div>
+
+          <div className="updated-containerr" style={{ backgroundColor: 'white' }}>
+            <p className="updated-title">E-Commerce Website</p>
+            <br /><br /><br />
+            <div className="updated-description">
+              <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
+                Development of an E-commerce website for a client as freelance project :
+              </h4>
+              <br />
+              <p>
+                {/* Project Details */}
+                &bull; check the website directly by clicking on "View project".<br /><br />
+
+              </p>
+              <br />
+              <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
+                <div className="updated-ButtonAnimation"><a className="demo" href="https://everydaygro.tn/" target="_blank" rel="noopener noreferrer">View Project</a></div>
+              </div>
+            </div>
+            <br /><br />
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+ {/* Section 5 */}
+      <section className="updated-animated-section">
+        <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
+        <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
+            <img className="updated-photoP" src={delevryImage} alt="Delivery Website" />
+          </div>
+
+          <div className="updated-containerr">
+            <p className="updated-title1" style={{ textDecoration: 'underline', textDecorationColor: 'rgb(197, 24, 139)' }}>International Delivery Platform</p>
+            <br />
+            <div className="updated-description">
+              <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
+                A complete full-stack platform for organizing international package deliveries, connecting transporters with clients.
+              </h4>
+              <br />
+              <p>
+                &bull; Dual-User System: Designed a complete management system for two distinct user types: Transporters (who post their trips) and Clients (who post their packages).<br />
+                &bull; Advanced Search: Implemented a powerful multi-criteria search engine, allowing users to filter trips/packages by destination, date, and size.<br />
+                &bull; Real-time Messaging: Developed an integrated chat module using Socket.IO for instant, real-time communication between users.<br />
+                &bull; Modern Frontend: Built a fast and responsive user interface using React.js (with Vite.js) and TypeScript for a type-safe, scalable codebase.<br />
+                &bull; Robust Backend: Created a secure RESTful API using Node.js (Express) to manage all data, authentication, and user logic.<br />
+                &bull; Data Management: Utilized PostgreSQL with the Sequelize ORM for efficient and reliable database operations and relationship management.<br />
+                &bull; DevOps Ready: Fully containerized the entire application (frontend, backend, database) using Docker for consistent deployment and scalability.<br /><br />
+                
+                <span style={{ color: 'rgb(197, 24, 139)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}>React.js | Node.js | TypeScript | PostgreSQL | Sequelize | Socket.IO | Docker</span>
+              </p>
+              <br />
+              <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
+                <div className="updated-ButtonAnimation" onClick={() => alert('This project is not uploaded yet, check it soon')}>View Project</div>
+              </div>
+            </div>
+            <br /><br />
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
 
 {/* Section 2 */}
       <section className="updated-animated-section1">
@@ -194,71 +281,10 @@ const ProjectPage = () => {
 
 
       
-     {/* Section 5 */}
-      <section className="updated-animated-section">
-        <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
-        <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
-            <img className="updated-photoP" src={delevryImage} alt="Delivery Website" />
-          </div>
 
-          <div className="updated-containerr">
-            <p className="updated-title1" style={{ textDecoration: 'underline', textDecorationColor: 'rgb(197, 24, 139)' }}>International Delivery Platform</p>
-            <br />
-            <div className="updated-description">
-              <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
-                A complete full-stack platform for organizing international package deliveries, connecting transporters with clients.
-              </h4>
-              <br />
-              <p>
-                &bull; Dual-User System: Designed a complete management system for two distinct user types: Transporters (who post their trips) and Clients (who post their packages).<br />
-                &bull; Advanced Search: Implemented a powerful multi-criteria search engine, allowing users to filter trips/packages by destination, date, and size.<br />
-                &bull; Real-time Messaging: Developed an integrated chat module using Socket.IO for instant, real-time communication between users.<br />
-                &bull; Modern Frontend: Built a fast and responsive user interface using React.js (with Vite.js) and TypeScript for a type-safe, scalable codebase.<br />
-                &bull; Robust Backend: Created a secure RESTful API using Node.js (Express) to manage all data, authentication, and user logic.<br />
-                &bull; Data Management: Utilized PostgreSQL with the Sequelize ORM for efficient and reliable database operations and relationship management.<br />
-                &bull; DevOps Ready: Fully containerized the entire application (frontend, backend, database) using Docker for consistent deployment and scalability.<br /><br />
-                
-                <span style={{ color: 'rgb(197, 24, 139)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}>React.js | Node.js | TypeScript | PostgreSQL | Sequelize | Socket.IO | Docker</span>
-              </p>
-              <br />
-              <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
-                <div className="updated-ButtonAnimation" onClick={() => alert('This project is not uploaded yet, check it soon')}>View Project</div>
-              </div>
-            </div>
-            <br /><br />
-          </div>
-        </div>
-      </section>
 
-            {/* Section 6 */}
-            <section className="updated-animated-section1">
-        <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
-          <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
-            <img className="updated-photoP" src={everydaygro} style={{ height: '100%', width: '100%', borderRadius:'0%' }} />
-          </div>
 
-          <div className="updated-containerr" style={{ backgroundColor: 'white' }}>
-            <p className="updated-title">E-Commerce Website</p>
-            <br /><br /><br />
-            <div className="updated-description">
-              <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
-                Development of an E-commerce website for a client as freelance project :
-              </h4>
-              <br />
-              <p>
-                {/* Project Details */}
-                &bull; check the website directly by clicking on "View project".<br /><br />
 
-              </p>
-              <br />
-              <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
-                <div className="updated-ButtonAnimation"><a className="demo" href="https://everydaygro.tn/" target="_blank" rel="noopener noreferrer">View Project</a></div>
-              </div>
-            </div>
-            <br /><br />
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

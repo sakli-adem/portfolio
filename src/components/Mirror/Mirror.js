@@ -1,5 +1,5 @@
-import React from 'react';
-import './Mirror.css'; // Create and style this CSS file as needed
+import React, { useEffect } from 'react'; // ZEDT { useEffect }
+import './Mirror.css'; 
 import resume from '../../assets/Project/Miroir/resume.png';
 import cablage from '../../assets/Project/Miroir/cablage.png';
 import led from '../../assets/Project/Miroir/led.png';
@@ -21,20 +21,32 @@ import contr from '../../assets/Project/Miroir/contr.jpg';
 import helmi from '../../assets/Project/Miroir/helmi.png';
 import { Link } from 'react-router-dom';
 
+
 const Mirror = () => {
+
+  // ZEDT HEDHA: Yforci el page bech tebda mel fouq
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
-      <header id="fixedHeader" className="fixed-header">
-   <Link style={{ width: '200px' }} type="button" className="btn btn-light" to="/ProjectPage">Go back</Link>
+      <header id="smartHead" className="smart-header">
+        <Link className="header-btn" to="/ProjectPage">Go back</Link>
       </header>
 
+      {/* NA7IT EL <br> MEN HNA */}
+      
       <div className="container mirror-container">
         <p className="presentation-title">Presentation Video</p>
-        <iframe
-          src="https://drive.google.com/file/d/1ZtKxydEhVPUY5cS7IUK-h13rFANRpx2k/preview"
-          width="80%"
-          height="400"
-          title="Smart Mirror Presentation"
+
+        {/* Zedt 'title' lel iframe (best practice) */}
+        <iframe 
+          src="https://drive.google.com/file/d/1hyUt16AOJft7zy1hzkxJdp1be43ltDwt/preview" 
+          width="80%" 
+          height="400" 
+          allow="autoplay"
+          title="Smart Mirror Presentation Video"
         ></iframe>
 
         <div className="photo-gallery">
@@ -58,22 +70,29 @@ const Mirror = () => {
           <img src={contr} alt="Control" className="photo" />
         </div>
 
+        {/* --- SECTION COLLABORATION (MRAKKA7A) --- */}
         <div className="collaboration-section">
-          <a 
-            className="collab-link alert" 
-            style={{ color: 'whitesmoke', textDecoration: 'none', backgroundColor: 'blueviolet', fontSize: '20px' }} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/helmi-hassine-6a1a38199/"
-          >
-            Collaboration with Hassine Helmi (Click here to visit his LinkedIn)
-          </a>
-          <img src={helmi} alt="Helmi Hassine" height="200px" width="250px" style={{ borderRadius: '50%' }} />
+          <img 
+            src={helmi} 
+            alt="Helmi Hassine" 
+            className="collab-img"
+          />
+          <div className="collab-info">
+            <p>Hassine Helmi</p>
+            <a 
+              className="collab-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/helmi-hassine-6a1a38199/"
+            >
+              Visiter le profil LinkedIn
+            </a>
+          </div>
         </div>
 
+        {/* --- LIEN PRESENTATION (MRAKKA7) --- */}
         <a 
-          className="alert alert-warning" 
-          style={{ fontSize: '20px' }} 
+          className="presentation-link" 
           target="_blank" 
           rel="noopener noreferrer"
           href="https://www.canva.com/design/DAFD9bmCIr4/x3lkq-uVZrsvTeiz8rkV_Q/edit?utm_content=DAFD9bmCIr4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"

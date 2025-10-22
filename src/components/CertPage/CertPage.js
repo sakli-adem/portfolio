@@ -15,7 +15,9 @@ import js2Img from '../../assets/certif/js2.png';
 import phpImg from '../../assets/certif/pp.png';
 import sqlImg from '../../assets/certif/sql.png';
 import englishImg from '../../assets/certif/english.png';
+import angularImg from '../../assets/certif/Angular.png';
 import { Link } from 'react-router-dom';
+
 const CertPage = () => {
   const certificates = [
     { src: htImg, title: 'HTML5', link: htImg },
@@ -30,6 +32,7 @@ const CertPage = () => {
     { src: js2Img, title: 'JavaScript - Certif2', link: js2Img },
     { src: phpImg, title: 'PHP', link: phpImg },
     { src: sqlImg, title: 'SQL', link: sqlImg },
+    { src: angularImg, title: 'Angular', link: angularImg },
     { src: englishImg, title: 'English B2', link: 'certif/Anglais_B2_Certif.pdf' }
   ];
 

@@ -1,96 +1,155 @@
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgb(217, 47, 87);
-    padding: 20px;
-    text-align: center;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: top 0.5s ease-in-out;
+.smart-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: orange;
+  padding: 22px 0 18px 0;
+  text-align: center;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(34, 10, 64, 0.17), 0 1.5px 8px rgba(0,0,0,0.08);
+  transition: top 0.45s cubic-bezier(0.72,0.27,0.35,0.95);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.smart-header .header-btn {
+  background: #fff;
+  color: #000000;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 10px 24px;
+  border-radius: 7px;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.smart-header .header-btn:hover {
+  background: #ebebeb;
+  color: #f07706;
 }
 
+/* --- CONTAINER (MRAKKA7 LEL OVERLAP) --- */
 .container.mirror-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    border: 4px solid black;
-    padding: 20px;
-    max-width: 1200px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* ZEDT MARGIN-TOP bech el header ma yghattich el content */
+  margin: 120px auto 20px auto; 
+
+  border: 4px solid black;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* --- IFRAME (VIDEO) --- */
+.mirror-container iframe {
+  border: none; /* Na7i el border mta3 l'iframe */
+  border-radius: 8px; /* Chwaya arrondies */
+  max-width: 100%;
 }
 
 .presentation-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #d21f57;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d21f57;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* --- GALLERY STYLES --- */
 .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .gallery-title {
-    font-size: 28px;
-    color: rgb(21, 18, 190);
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 28px;
+  color: rgb(21, 18, 190);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .photo {
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* --- "PRO" COLLABORATION SECTION STYLES --- */
 .collaboration-section {
-    border: 4px solid rgb(124, 11, 152);
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 18px;
-    background-color: #e9ecef;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espace bin el taswira w el text */
+  background-color: #f9f9f9; /* Fond de carte léger */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Ombre subtile */
+  max-width: 550px; /* Nta7akmou fel 3ordh */
+  margin: 30px auto; /* Centrer el carte */
+  flex-wrap: wrap; /* Lel les écrans sghar */
+  justify-content: center; /* Centrer 3al les écrans sghar */
 }
 
-.collaboration-section a {
-    color: whitesmoke;
-    text-decoration: none;
-    background-color: blueviolet;
-    font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: inline-block;
+.collab-img {
+  height: 100px; /* Taille cohérente */
+  width: 100px;
+  border-radius: 50%; /* Cercle */
+  object-fit: cover; /* Be_ch taswira ma tet3afech */
 }
 
-.collaboration-section img {
-    border-radius: 50%;
-    margin-top: 15px;
-    max-width: 250px;
-    height: auto;
+.collab-info {
+  flex: 1; 
+  min-width: 200px;
+  text-align: left; /* Be_ch el text yebda 3al lissar */
 }
 
+.collab-info p {
+  margin: 0 0 10px 0; 
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #333;
+}
+
+.collab-link {
+  color: white; 
+  text-decoration: none; 
+  background-color: #0077B5; /* Couleur LinkedIn */
+  font-size: 15px;
+  padding: 10px 16px; 
+  border-radius: 6px; 
+  font-weight: 500;
+  display: inline-block; 
+}
+
+/* --- "PRO" PRESENTATION LINK STYLES --- */
 .presentation-link {
-    margin-top: 30px;
-    text-align: center;
+  font-size: 16px;
+  color: #856404; /* Couleur text mghame9 */
+  background-color: #fff3cd; /* Fond asfer fate7 */
+  border: 1px solid #ffeeba; /* Bordure mta3ou */
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block; 
+  margin: 0 auto 20px auto; /* Espacement */
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
-.presentation-link a {
-    font-size: 20px;
-    color: #856404;
-    background-color: #fff3cd;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+.presentation-link:hover {
+  background-color: #ffeeba;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

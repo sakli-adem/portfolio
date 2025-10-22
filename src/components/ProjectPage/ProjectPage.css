@@ -102,17 +102,6 @@
 }
 
 
-/* Responsive improvements for header */
-@media (max-width: 768px) {
-  #fixedHeader {
-    padding: 12px 0;
-  }
-  #fixedHeader .btn {
-    font-size: 15px;
-    padding: 8px 16px;
-    margin-left: 15px;
-  }
-}
 
 
 .updated-photoP {
