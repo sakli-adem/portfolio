@@ -1,0 +1,173 @@
+/* === NEW NAVBAR STYLES === */
+/* Re-styling the .nav-bar to match the main site's sticky navbar */
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* These properties are from your main .navbar.sticky style */
+  padding: 15px 0;
+  background: rgb(223, 114, 12); /* Main site orange */
+  font-family: 'Ubuntu', sans-serif;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  height: auto; /* Override old 75px */
+}
+
+/* Removing the old blue box around the link */
+#fixedHeader {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Styling the "Go back" link to look like a main nav button */
+#fixedHeader a {
+  display: inline-block;
+  background: none;
+  border: 2px solid #fff; /* White border */
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 24px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect to match your main site's buttons */
+#fixedHeader a:hover {
+  background: #fff;
+  color: rgb(223, 114, 12);
+  text-decoration: none;
+}
+
+
+/* === NEW "PRO" PAGE & CARD STYLES === */
+
+.cert-page {
+  /* Cleaner, more professional background */
+  background: #f9f9f9;
+  color: #333; /* Default text color for the new background */
+  min-height: 100vh;
+}
+
+#down {
+  /* Increased top margin to account for the new sticky navbar height */
+  margin: 120px 20px 40px 20px;
+  padding: 20px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between cards */
+}
+
+.card {
+  /* Modern white-card design */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  width: 280px; /* Slightly larger cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer, modern shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Cleaner hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer; /* Indicates the image is clickable (for modal) */
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 15px; /* More spacing */
+  font-size: 18px;
+  font-weight: 600; /* Bolder title */
+  color: #333; /* Dark text for white background */
+}
+
+.card-button {
+  margin-top: 10px;
+}
+
+.btn-primary {
+  /* Using your main site's orange accent color */
+  background-color: rgb(223, 114, 12);
+  border: none;
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  /* Darker orange on hover */
+  background-color: rgb(193, 116, 0);
+  color: #fff;
+}
+
+
+/* === MODAL STYLES (from previous step) === */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; 
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.modal-image {
+  max-width: 95%;
+  max-height: 95vh;
+  object-fit: contain;
+  border: 3px solid white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #bbb;
+}

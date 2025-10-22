@@ -1,0 +1,1029 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ContaDiv{
+    align-items: center; justify-content: center;align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .bttn {
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 227px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .about{
+    height: 120vh;
+ }
+/* all similar content styling codes */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    width: 100%;
+    padding: 0 80px;
+    margin: auto;
+    text-align: justify;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(223, 114, 12);
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(220, 110, 20);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(226, 113, 7);
+    text-decoration: 1px underline white ;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu btn styling */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(223, 136, 22);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+  
+/* home section styling */
+.home{
+    
+    display: flex;
+    background: black;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+   background-color: black;
+}
+
+.home .max-width{
+    margin: 50px 0 auto 30px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+  
+}
+.home .home-content .text-3 span{
+    color: rgb(223, 111, 19);
+    font-weight: 500;
+    word-spacing: normal;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: rgb(226, 126, 12);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(250, 250, 250);
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: rgb(220, 110, 20);
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.image{
+    float: right;
+    background-color: blanchedalmond;
+    width: 400px;
+    height: 380px;
+    border:4px double rgb(255, 255, 255);
+    background-color: rgb(248, 248, 248);
+    transition: all 0.6s ease;
+    margin-top: 70px;
+    border-radius: 50%;
+    
+}
+.taswira {
+    margin: auto;
+}
+.image:hover{
+    border:4px double rgb(223, 96, 22);
+    background-color: rgb(233, 97, 18); 
+}
+
+#SkillsImg{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 27px;
+}
+
+
+
+
+/* about section styling */
+
+
+
+
+
+.div3ordh.hid4 {
+    visibility: visible;
+    animation: de 1s ease forwards;
+}
+
+
+
+
+
+ .ktiba2{
+    text-align: justify;
+ }
+
+
+
+
+
+.sp{
+color: rgb(0, 0, 0);
+ text-decoration: 3px underline orange;
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+letter-spacing: 3px;
+
+}
+
+
+.sp1{
+    color: rgb(0, 0, 0);
+     text-decoration: 3px underline orange;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    }
+
+
+.bttn{
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(250, 250, 250);
+}
+
+
+
+
+.container{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    animation: pump 3s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes pump {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.bttn:hover{
+    background-color: rgb(255, 255, 255);
+    color: orange;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+/*skills wa7da*/
+.sss{
+
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #000000,#000);
+}
+
+.skil{
+position: relative;
+width: 500px;
+}
+.skil h2 
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skil .mahara{
+    position: relative;
+    display: flex;
+    margin: 15px 0 ;
+    padding: 10px 7px 13px;
+    background: linear-gradient(rgb(66, 64, 64) ,rgb(60, 60, 65)    );
+    border-radius: 8px ;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.skil .mahara ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: rgba(185, 184, 184, 0.1);
+    z-index: 10;
+}
+
+.skil .mahara .essem{
+    width: 110px;
+    text-align: right;
+    color: white;
+    margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.skil .mahara .valeur{
+    width: 40px;
+    text-align: left;
+  color: rgb(255, 255, 255);
+    margin-top: -2px;
+}
+.percent{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 10px;
+    margin: 0 15px;
+    margin-top: 10px;
+    background: #000000;
+    box-shadow: inset 0 0 10px black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.skil.ani .mahara .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 2s ease-in-out 
+    forwards;
+}
+
+
+.skil .mahara:hover{
+transform:scale(1.1);
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*tawa el projet section*/
+
+.dw{
+    width: 100%;
+    margin-top: 110px;
+    height: 200px;
+    border: 3px solid black;
+    align-items: center;
+    text-align: center;
+}
+
+
+.dw.ani2{
+    visibility: visible;
+    animation: lotaa 1s ease forwards;
+  
+}
+@keyframes lotaa{
+    
+    0%{ transform: translateX(8px); opacity: 1}
+    100%{transform: translateX(-8px);opacity: 0;
+   }
+}
+
+
+
+.dw.ani1 {
+    visibility: visible;
+    animation: lota 1s ease forwards;
+  
+}
+
+@keyframes lota{
+    
+    0%{ transform: translateX(-8px); opacity: 0}
+    100%{transform: translateX(8px);opacity: 1;
+   }
+}
+
+.dw .blasa {align-items: center;
+margin: auto;
+height: 50px;}
+
+
+
+ 
+.lawen{
+    color: rgb(221, 112, 22);
+}
+
+
+/*adhaya certif*/
+.dww{
+    width: 100%;
+    margin-top: 110px;
+    height: 200px;
+    border: 3px solid rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+}
+.certif{
+    height:100vh;
+    background-color: rgb(0, 0, 0);
+      width: 100%;
+      margin: auto;
+}
+
+.sp5{
+    color: rgb(255, 255, 255);
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+letter-spacing: 3px;
+
+}
+
+.certif p{
+    margin-top: 30px;
+font-family: Georgia, 'Times New Roman', Times, serif;   
+font-size :20px;
+font-weight: 600;  
+color: white;
+}
+ 
+
+
+.bttn1{
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 50px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(250, 250, 250);
+}
+.bttn1:hover{
+    background-color: rgb(0, 0, 0);
+    color: orange;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+
+
+/* w adhaya contact*/
+
+.conta{
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    align-items: center;justify-content: center;text-align: center;
+
+}
+
+.email{
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+ }
+ 
+
+.name{
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+ }
+ .klem{
+    height: 150px;
+    border: 3px solid black;
+width: 100%;
+border-radius: 15px;
+font-size: 20px;
+ }
+ 
+.ttt{
+   width: 50%;
+   margin-left: 25%;
+}
+
+.contactme{
+    height: 100px;
+    padding: 0;
+  
+
+}
+.ekteb{
+    text-align: center;
+    color: black;
+    font-weight:600;
+    font-size: 40px;
+font-family: 'Ubuntu', sans-serif;}
+.ema{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+
+.karita{
+    width: 100%;
+    float: right;
+margin-bottom: 50px;
+    height: 330px;
+border-radius: 10px;
+
+}
+.ckar{
+    width: 500px;
+    float: right;
+    height: 400px;
+margin-right: 100px;
+border-radius: 20px;
+border: 2px solid black;
+}
+
+.fm{
+    width: 100;
+    height: 50px;
+    margin-top: 8px;
+}
+
+
+.bttn3{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 39%;
+    width: 200px;}
+
+
+    .bttn3:hover{
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+
+    cursor: pointer;}
+
+
+
+
+    .ss{background: rgb(0, 0, 0);
+
+        height: 100px;
+        align-items: center;
+display: flex;
+text-align: center;
+align-content: center;
+
+    }
+.kaka{margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+}
+.kaka1{margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.kaka:hover{
+transform: scale(1.2);
+}
+.kaka1:hover{
+    transform: scale(1.2); 
+}
+
+
+
+
+  
+/* responsive media query start */
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    .image{
+        float: right;
+        background-color: blanchedalmond;
+        width: 360px;
+        height: 330px;
+        border:4px double rgb(255, 255, 255);
+        background-color: rgb(248, 248, 248);
+        transition: all 0.6s ease;
+        margin-top: 70px;
+        
+    }
+
+}
+@media (max-width: 947px){
+    .image{
+        float: right;
+        background-color: blanchedalmond;
+        width: 300px;
+        height: 290px;
+        border:4px double rgb(255, 255, 255);
+        background-color: rgb(248, 248, 248);
+        transition: all 0.6s ease;
+        margin-top: 70px;
+        
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 200vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.3s ease;
+
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+
+@media (max-width: 787px ){
+    .image{
+display: none;
+    }
+
+
+
+    .home{
+        display: flex;
+        background: black;
+        height: 100vh;
+        color: #fff;
+        min-height: 500px;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
+background: linear-gradient(to top, black,purple,black);
+    }
+
+    
+
+
+
+
+
+
+
+
+}
+@media (max-width: 690px) {
+    .bttn3{
+        display: inline-block;
+        background: rgb(0, 0, 0);
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        font-weight: 400;
+        border-radius: 12px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-left: 27%;
+        width: 150px;}
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+
+        
+.div3ordh{
+    width: 100%;
+    visibility: visible;
+
+}
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 630px) {
+    .about{
+        height: auto;
+     }
+
+     .sss{
+
+        height: auto;}
+        
+        .conta{
+    width: 100%;
+    height: 75vh;
+    margin: auto;
+    
+
+}
+.email{
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+ 
+ }
+ 
+
+.name{
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+ }
+ .klem{
+    height: 150px;
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 15px;
+ }}
+
+
+
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 80px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    .home .home-content .text-1{
+        font-size: 28px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    } .home-content .text-3{
+        font-size: 27px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .kaka{margin-top: 30px;
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+    }
+    .kaka1{margin-top: 30px;
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+        border-radius: 50%;
+    }
+    .home-content{
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+        transform: translate(0 ,-40px);}
+}
+
+
+
+
+@media(max-width:370px){
+    .home-content{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    transform: translate(0 ,-40px);}
+
+.name{
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+ }
+ .klem{
+    height: 150px;
+    border: 2px solid black;
+width: 100%;
+border-radius: 15px;
+ }
+ 
+.ttt{
+    justify-content: center;text-align: center;align-items: center;
+   width: 320px;
+  
+}
+.bttn3{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 19%;
+    width: 200px;}
+
+
+    
+.div3ordh{
+    width: 100%;
+    visibility: visible;
+
+}
+
+
+}
+
+    
+.typing {
+    display: inline;
+    color: rgb(223, 111, 19); /* Change to fit your design */
+    font-weight: 600;
+    font-size: 24px; /* Adjust size as needed */
+  }
+  

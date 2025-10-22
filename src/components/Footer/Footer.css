@@ -1,0 +1,34 @@
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-content .social-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-content .social-links a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .footer-content .social-links a:hover {
+    color: rgb(226, 113, 7);
+}
+
+.footer .footer-content .copyright {
+    font-size: 16px;
+    color: #ccc;
+}

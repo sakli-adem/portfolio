@@ -1,0 +1,308 @@
+
+/* Section styles */
+.updated-animated-section,
+.updated-animated-section1 {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.updated-animated-section {
+  background-color: transparent;
+}
+
+.updated-animated-section1 {
+  background-color: transparent;
+}
+
+/* Section Inner Container - Enhanced Design */
+.updated-animated-section > div,
+.updated-animated-section1 > div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 
+              0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.updated-animated-section > div::before,
+.updated-animated-section1 > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #b783ea 50%, #f16819 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.updated-animated-section > div:hover::before,
+.updated-animated-section1 > div:hover::before {
+  transform: scaleX(1);
+}
+
+.updated-animated-section > div:hover,
+.updated-animated-section1 > div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
+              0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* Photo Container - Enhanced */
+.updated-photo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  position: relative;
+  background: linear-gradient(135deg, #667eea15, #764ba215);
+}
+
+.updated-photo-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #667eea, #f80808, #f093fb);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  
+  /* For standard browsers (Firefox) */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  
+  /* ------------------ */
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.updated-photo-container:hover::after {
+  opacity: 1;
+}
+
+.updated-photo-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 50px rgba(102, 126, 234, 0.25);
+}
+
+
+/* Responsive improvements for header */
+@media (max-width: 768px) {
+  #fixedHeader {
+    padding: 12px 0;
+  }
+  #fixedHeader .btn {
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-left: 15px;
+  }
+}
+
+
+.updated-photoP {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.updated-photo-container:hover .updated-photoP {
+  transform: scale(1.05);
+}
+
+/* Content Container - Enhanced */
+.updated-containerr {
+  flex: 2;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.updated-containerr .updated-title,
+.updated-containerr .updated-title1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.updated-containerr .updated-description h4 {
+  margin-bottom: 15px;
+  color: #2d3748;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.updated-containerr .updated-description p {
+  margin-bottom: 20px;
+  color: #4a5568;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+/* Professional text styling for bullet points */
+.updated-containerr .updated-description p {
+  text-align: left;
+}
+
+.updated-containerr .updated-description p br {
+  display: block;
+  margin: 8px 0;
+  content: "";
+}
+/* Button Animation - Enhanced */
+.updated-ButtonAnimation {
+  display: inline-block;
+  padding: 14px 32px;
+  background: rgb(255, 94, 0);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.updated-ButtonAnimation::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.updated-ButtonAnimation:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.updated-ButtonAnimation:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.updated-ButtonAnimation a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+/* Canal Images - Enhanced */
+.updated-canal {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.updated-canal:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  border-radius: 15px;
+}
+
+/* Flex container styles */
+.updated-animated-section > div,
+.updated-animated-section1 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .updated-photo-container {
+    max-width: 600px;
+  }
+  
+  .updated-containerr .updated-title,
+  .updated-containerr .updated-title1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .updated-animated-section > div,
+  .updated-animated-section1 > div {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .updated-photo-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .updated-containerr {
+    width: 100%;
+  }
+  
+  .updated-containerr .updated-title,
+  .updated-containerr .updated-title1 {
+    font-size: 28px;
+  }
+  
+  .updated-ButtonAnimation {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .updated-animated-section > div,
+  .updated-animated-section1 > div {
+    padding: 25px 15px;
+    border-radius: 20px;
+  }
+  
+  .updated-containerr .updated-title,
+  .updated-containerr .updated-title1 {
+    font-size: 24px;
+  }
+  
+  .updated-canal {
+    width: 50px;
+    height: 50px;
+  }
+}

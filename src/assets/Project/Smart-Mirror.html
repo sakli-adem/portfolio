@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Smart-Mirro</title>
+</head>
+<body>
+    <style>
+        .tsawer{
+            height: 200px;
+            width: 400px;
+            margin: 20px;
+        }
+
+        #fixedHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.5s;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: rgb(217, 47, 87);
+  padding: 20px;
+  z-index: 999; 
+}
+
+.hide-navbar {
+  top: -100px;
+}
+    </style>
+
+
+<header id="fixedHeader">
+    <a style="width: 200px;" type="button" class="btn btn-light" href="../Project.html#Mirror">Go back</a>
+  </header>
+  <br><br><br><br>
+  
+    <div class="container" style="justify-content: center;text-align: center;align-items: center;margin: auto; border: 4px solid black;  margin-top: 20px;">
+    <p style="font-size: 22px; font-weight: bold; color: red;">Presentation Video</p>
+    <iframe  src="https://drive.google.com/file/d/1ZtKxydEhVPUY5cS7IUK-h13rFANRpx2k/preview" width="80%" height="400"></iframe>
+
+
+    <div style="width: 100%;">
+    <p style="font-size: 30px; color: rgb(21, 18, 190); font-weight: bold;">Photos</p>
+<img src="Miroir/resume.png" alt="" class="tsawer">
+<img src="Miroir/cablage.png" alt="" class="tsawer">
+<img src="Miroir/led.png" alt="" class="tsawer">
+<img src="Miroir/max.png" alt="" class="tsawer">
+<img src="Miroir/horlo.png" alt="" class="tsawer">
+<img src="Miroir/calend.png" alt="" class="tsawer">
+<img src="Miroir/voice.png" alt="" class="tsawer">
+<img src="Miroir/meteo.png" alt="" class="tsawer">
+<img src="Miroir/heal.png" alt="" class="tsawer">
+<img src="Miroir/message.png" alt="" class="tsawer">
+<img src="Miroir/news.png" alt="" class="tsawer">
+<img src="Miroir/face.png" alt="" class="tsawer">
+<img src="Miroir/google.png" alt="" class="tsawer">
+<img src="Miroir/webapp.png" alt="" class="tsawer">
+<br>
+<img src="Miroir/mf.jpg" style="height: 300px; width: 200px;" >
+<img src="Miroir/mf1.jpg"  style="height: 300px; width: 200px;">
+<img src="Miroir/usb.jpg" style="height: 300px; width: 200px;">
+<img src="Miroir/contr.jpg" style="height: 300px; width: 200px;">
+    
+
+    </div>
+    <br><br>
+    <div style="border: 4px solid rgb(124, 11, 152); padding: 15px; width: 70%;margin: auto; border-radius: 18px;"> <br>
+        <a class="alert " style="color: whitesmoke; text-decoration: none;background-color: blueviolet;font-size: 20px;" target="_blank" href="https://www.linkedin.com/in/helmi-hassine-6a1a38199/">Collaboration with Hassine Helmi (Click here to visit his Linkedin)</a><br><br><br>
+        <img src="helmi.png" height="200px " width="250px" style="border-radius: 50%;"> <br><br>
+    </div> <br><br>
+
+<a class="alert alert-warning" style="font-size: 20px;" target="_blank" href="https://www.canva.com/design/DAFD9bmCIr4/x3lkq-uVZrsvTeiz8rkV_Q/edit?utm_content=DAFD9bmCIr4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Check this link to view the Presentatiom</a>
+
+<br><br>
+    </div>
+
+
+
+
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+if (prevScrollpos > currentScrollPos) {
+    document.getElementById("fixedHeader").style.top = "0";
+
+} else {
+    document.getElementById("fixedHeader").style.top = "-100px";
+}
+prevScrollpos = currentScrollPos;
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+</body>
+</html>
