@@ -130,7 +130,6 @@ section{
 }
 .navbar .menu li a:hover{
     color: rgb(226, 113, 7);
-    text-decoration: 1px underline white ;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
