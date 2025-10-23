@@ -54,7 +54,7 @@ const Header = () => {
           <ul className={`menu ${menuOpen ? 'active' : ''}`}>
             <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="#mi" onClick={() => setMenuOpen(false)}>Skills</a></li>
+            <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
             <li><a href="#project" onClick={() => setMenuOpen(false)}>Projects</a></li>
             <li><a href="#certif" onClick={() => setMenuOpen(false)}>Certificates</a></li>
             <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
