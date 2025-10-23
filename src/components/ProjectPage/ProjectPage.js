@@ -88,35 +88,46 @@ const ProjectPage = () => {
 
 
 
-            {/* Section 6 */}
-            <section className="updated-animated-section1">
-        <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
-          <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
-            <img className="updated-photoP" src={everydaygro} style={{ height: '100%', width: '100%', borderRadius:'0%' }} />
-          </div>
+{/* Section 6 */}
+<section className="updated-animated-section1">
+  <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
+    <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
+      <img className="updated-photoP" src={everydaygro} style={{ height: '100%', width: '100%', borderRadius:'0%' }} alt="E-Commerce Website" />
+    </div>
+    <div className="updated-containerr" style={{ backgroundColor: 'white' }}>
+      <p className="updated-title">E-Commerce Website</p>
+      <br /><br /><br />
+      <div className="updated-description">
+        <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
+          Development of an E-commerce website for a client as a freelance project:
+        </h4>
+        <br />
+        <p>
+          {/* Project Details */}
+          &bull; Development of an online sales platform with a dedicated admin interface.<br />
+          &bull; Creation of a complete back-office for managing products, inventory, and orders.<br />
+          &bull; Development of the store's front-office for product presentation and sales.<br />
+          &bull; Implementation of a user-friendly product search and filtering system.<br />
+          &bull; Integration of a customer review and rating system to enhance user trust.<br /><br />
 
-          <div className="updated-containerr" style={{ backgroundColor: 'white' }}>
-            <p className="updated-title">E-Commerce Website</p>
-            <br /><br /><br />
-            <div className="updated-description">
-              <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
-                Development of an E-commerce website for a client as freelance project :
-              </h4>
-              <br />
-              <p>
-                {/* Project Details */}
-                &bull; check the website directly by clicking on "View project".<br /><br />
-
-              </p>
-              <br />
-              <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
-                <div className="updated-ButtonAnimation"><a className="demo" href="https://everydaygro.tn/" target="_blank" rel="noopener noreferrer">View Project</a></div>
-              </div>
-            </div>
-            <br /><br />
+          <span style={{ color: 'rgb(241, 44, 0)', fontWeight: 'bold' }}>Technical Environment:</span>
+          <span style={{ fontSize: '15px', fontWeight: 'bold' }}>
+            PHP | MySQL | JavaScript | Bootstrap | UnitTest | AJAX
+          </span>
+          <br /><br />
+          &bull; Check the website directly by clicking on "View Project".
+        </p>
+        <br />
+        <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
+          <div className="updated-ButtonAnimation">
+            <a className="demo" href="https://everydaygro.tn/" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
         </div>
-      </section>
+      </div>
+      <br /><br />
+    </div>
+  </div>
+</section>
 
 
 
@@ -147,7 +158,8 @@ const ProjectPage = () => {
                 &bull; Data Management: Utilized PostgreSQL with the Sequelize ORM for efficient and reliable database operations and relationship management.<br />
                 &bull; DevOps Ready: Fully containerized the entire application (frontend, backend, database) using Docker for consistent deployment and scalability.<br /><br />
                 
-                <span style={{ color: 'rgb(197, 24, 139)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}>React.js | Node.js | TypeScript | PostgreSQL | Sequelize | Socket.IO | Docker</span>
+                <span style={{ color: 'rgb(197, 24, 139)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}> React.js, Node.js (Express), PostgreSQL, Vite.js, TypeScript, GitHub,PostgreSQL, Sequelize,
+ Socket.IO, Docker</span>
               </p>
               <br />
               <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>

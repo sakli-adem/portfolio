@@ -9,7 +9,7 @@ const Projects = () => {
         <h1 className="sp">MY PROJECT SECTION</h1>
         <div className="dww">
           <div className="blasa">
-            <p>By clicking on <span className="lawen">"Move to project"</span> you will see some of my projects, you can select any one you want to visit</p>
+            <p>By clicking on <span className="lawen">"Move to project"</span> you will see some of my projects. Feel free to explore any of them 😎​</p>
           </div>
           <Link to="/ProjectPage" className="bttn1">Move to project</Link> {/* Adjusted the link target */}
         </div>

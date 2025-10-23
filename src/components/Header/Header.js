@@ -27,11 +27,25 @@ const Header = () => {
     };
   }, []);
 
+  // --- FUNCTION TO SCROLL TO TOP ---
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Makes the scroll smooth
+    });
+  };
+
   return (
     <header>
-      <div className="scroll-up-btn">
+      {/* --- CLICK EVENT ADDED HERE --- */}
+      <div 
+        className="scroll-up-btn" 
+        onClick={scrollToTop} 
+        style={{ cursor: 'pointer' }} // Adds the pointer hand on hover
+      >
         <i className="fas fa-angle-up"></i> 
       </div>
+
       <nav className="navbar">
         <div className="max-width">
           <div className="logo">

@@ -16,6 +16,7 @@ import phpImg from '../../assets/certif/pp.png';
 import sqlImg from '../../assets/certif/sql.png';
 import englishImg from '../../assets/certif/english.png';
 import angularImg from '../../assets/certif/Angular.png';
+import englishpdf from '../../assets/certif/Anglais_B2_Certif.pdf';
 import { Link } from 'react-router-dom';
 
 const CertPage = () => {
@@ -33,7 +34,7 @@ const CertPage = () => {
     { src: phpImg, title: 'PHP', link: phpImg },
     { src: sqlImg, title: 'SQL', link: sqlImg },
     { src: angularImg, title: 'Angular', link: angularImg },
-    { src: englishImg, title: 'English B2', link: 'certif/Anglais_B2_Certif.pdf' }
+    { src: englishImg, title: 'English B2', link:englishpdf }
   ];
 
   // State for modal
@@ -75,7 +76,7 @@ const CertPage = () => {
               <div key={index} className="card mb-4">
                 <div className="view overlay">
                   {isPdf ? (
-                    <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                    <a href={cert.link} target="_blank" rel="noopener noreferrer" download>
                       <img className="card-img-top" src={cert.src} alt={cert.title} />
                     </a>
                   ) : (
@@ -94,7 +95,7 @@ const CertPage = () => {
                   </header>
                   <article className="card-button">
                     {isPdf ? (
-                      <a href={cert.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                      <a href={cert.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer" download>
                         View certificate
                       </a>
                     ) : (

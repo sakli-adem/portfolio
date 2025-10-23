@@ -20,7 +20,7 @@ import usb from '../../assets/Project/Miroir/usb.jpg';
 import contr from '../../assets/Project/Miroir/contr.jpg';
 import helmi from '../../assets/Project/Miroir/helmi.png';
 import { Link } from 'react-router-dom';
-
+import Header from '../Header/Header';    
 
 const Mirror = () => {
 
@@ -43,7 +43,7 @@ const Mirror = () => {
         {/* Zedt 'title' lel iframe (best practice) */}
         <iframe 
           src="https://drive.google.com/file/d/1hyUt16AOJft7zy1hzkxJdp1be43ltDwt/preview" 
-          width="80%" 
+          width="100%" 
           height="400" 
           allow="autoplay"
           title="Smart Mirror Presentation Video"

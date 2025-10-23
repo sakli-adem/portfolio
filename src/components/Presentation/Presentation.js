@@ -9,7 +9,13 @@ const Presentation = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Software Engineering student", "designer", "developer"],
+        strings: [
+        "Software Engineer", 
+        "Full-Stack Developer", 
+        "AI Engineer", 
+        "Tech Innovator", 
+        "Problem Solver"
+      ],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
