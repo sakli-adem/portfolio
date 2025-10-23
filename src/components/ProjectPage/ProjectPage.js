@@ -70,7 +70,7 @@ const ProjectPage = () => {
                 &bull; Design and realization of a prototype<br />
                 &bull; Integration of a USB hub for device charging and mirror configuration<br />
                 &bull; Best university project of the year 2021/2022<br /><br />
-                <span style={{ color: 'rgb(241, 44, 0)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}>HTML | CSS | Bootstrap | PHP | SQL | Python | Flask | React.js | Node.js | Electron | Raspberry Pi 4</span>
+                <span style={{ color: 'rgb(241, 44, 0)', fontWeight: 'bold' }}>Keywords:</span> <span style={{ fontSize: '15px', fontWeight: 'bold' }}>HTML | CSS | Bootstrap | PHP | SQL | Python | Flask | React.js | Node.js | Electron | Raspberry Pi 4|API REST, OpenCV, IA</span>
               </p>
               <br />
               <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
