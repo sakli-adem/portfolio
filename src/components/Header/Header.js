@@ -28,12 +28,9 @@ const Header = () => {
   }, []);
 
   // --- FUNCTION TO SCROLL TO TOP ---
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Makes the scroll smooth
-    });
-  };
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 
   return (
     <header>

@@ -14,6 +14,7 @@ import zitounaImage from '../../assets/images/zitouna.png';
 import wataniyaImage from '../../assets/images/wataniya.png';
 import jeuneImage from '../../assets/images/jeune.png';
 import everydaygro from '../../assets/images/everyday.jpg';
+import skdriveImage from '../../assets/images/skdrive.png';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 const ProjectPage = () => {
@@ -88,7 +89,7 @@ const ProjectPage = () => {
 
 
 
-{/* Section 6 */}
+{/* Section 2 */}
 <section className="updated-animated-section1">
   <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
     <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
@@ -114,8 +115,7 @@ const ProjectPage = () => {
           <span style={{ fontSize: '15px', fontWeight: 'bold' }}>
             PHP | MySQL | JavaScript | Bootstrap | UnitTest | AJAX
           </span>
-          <br /><br />
-          &bull; Check the website directly by clicking on "View Project".
+
         </p>
         <br />
         <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
@@ -131,10 +131,67 @@ const ProjectPage = () => {
 
 
 
+{/* =========== SKdrive Section (English - Updated) =========== */}
+<section className="updated-animated-section">
+  <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
+    <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
+      {/* Image you requested */}
+      <img className="updated-photoP" src={skdriveImage} alt="SKdrive Project" />
+    </div>
+
+    <div className="updated-containerr">
+      {/* Title in blue */}
+      <p className="updated-title1" style={{ textDecoration: 'underline', textDecorationColor: 'rgb(0, 123, 255)' }}>SKdrive VTC Platform</p>
+      <br />
+      <div className="updated-description">
+        <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
+          A custom VTC platform (MERN stack) designed for an independent driver, managing the entire booking process from public estimation to administrative management.
+        </h4>
+        <br />
+        <p>
 
 
+          {/* === 1. PUBLIC INTERFACE (CLIENT) === */}
+          &bull; <strong>1. Public Interface (Homepage):</strong>
+          <br />
+          <span style={{ marginLeft: '20px' }}>&bull; A module for real-time ride price estimation.</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; A guided and simple booking system (no account creation required).</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; A "Contact" page and a system for displaying customer reviews.</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; A booking tracking feature allowing clients to see their ride status via a unique ID.</span>
+          <br /><br />
 
- {/* Section 5 */}
+          {/* === 2. ADMIN PAGE (DRIVER DASHBOARD) === */}
+          &bull; <strong>2. Admin Page (Driver Dashboard):</strong>
+          <br />
+          <span style={{ marginLeft: '20px' }}>&bull; A main dashboard with a calendar displaying all planned rides for the driver.</span><br />
+          {/* === HENA L POINT JDIDA LI ZEDTHA === */}
+          <span style={{ marginLeft: '20px' }}>&bull; Ability for the driver to block specific dates (e.g., for holidays or unavailability).</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; A dedicated page for managing reservations (to validate or cancel new requests).</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; Tool for generating booking and payment receipts.</span><br />
+          <span style={{ marginLeft: '20px' }}>&bull; Configuration panel to set and update the price per kilometer.</span>
+          <br /><br />
+
+          <span style={{ color: 'rgb(0, 123, 255)', fontWeight: 'bold' }}>Keywords:</span>
+          <span style={{ fontSize: '15px', fontWeight: 'bold' }}> React.js | Node.js | Express.js | MongoDB | Mongoose | JWT | REST API | Bootstrap</span>
+        </p>
+        <br />
+        <div style={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
+          {/* Links as requested */}
+          <div className="updated-ButtonAnimation" style={{ marginRight: '10px', display: 'inline-block' }}>
+            <a className="demo" href="https://skdrivefr.netlify.app/" target="_blank" rel="noopener noreferrer">Homepage</a>
+          </div>
+          <div className="updated-ButtonAnimation" style={{ display: 'inline-block' }}>
+            <a className="demo" href="https://skdrivefr.netlify.app/admin/login" target="_blank" rel="noopener noreferrer">Admin Page</a>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+  </div>
+</section>
+{/* =========== END SKdrive Section =========== */}
+
+ {/* Section 4 */}
       <section className="updated-animated-section">
         <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
         <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
