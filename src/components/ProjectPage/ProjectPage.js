@@ -29,7 +29,7 @@ const ProjectPage = () => {
 <Link
   type="button"
   className="updated-ButtonAnimation"
-  to="/#project" // Va à la page d'accueil ET scroll à l'ID #project
+  to="/#project" 
     style={{
       width: '200px',
       display: 'inline-block',
@@ -131,7 +131,6 @@ const ProjectPage = () => {
 
 
 
-{/* =========== SKdrive Section (English - Updated) =========== */}
 <section className="updated-animated-section">
   <div style={{ display: 'flex', justifyContent: 'space-between', height: '100%' }}>
     <div className="updated-photo-container" style={{ height: '100%', width: '700px' }}>
@@ -160,11 +159,9 @@ const ProjectPage = () => {
           <span style={{ marginLeft: '20px' }}>&bull; A booking tracking feature allowing clients to see their ride status via a unique ID.</span>
           <br /><br />
 
-          {/* === 2. ADMIN PAGE (DRIVER DASHBOARD) === */}
           &bull; <strong>2. Admin Page (Driver Dashboard):</strong>
           <br />
           <span style={{ marginLeft: '20px' }}>&bull; A main dashboard with a calendar displaying all planned rides for the driver.</span><br />
-          {/* === HENA L POINT JDIDA LI ZEDTHA === */}
           <span style={{ marginLeft: '20px' }}>&bull; Ability for the driver to block specific dates (e.g., for holidays or unavailability).</span><br />
           <span style={{ marginLeft: '20px' }}>&bull; A dedicated page for managing reservations (to validate or cancel new requests).</span><br />
           <span style={{ marginLeft: '20px' }}>&bull; Tool for generating booking and payment receipts.</span><br />
@@ -245,7 +242,6 @@ const ProjectPage = () => {
           <div className="updated-containerr" style={{ backgroundColor: 'white' }}>
             <p className="updated-title">Tunisian Radio</p>
             <br />
-            {/* === DESCRIPTION JDIDA HNA === */}
             <div className="updated-description">
               <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
                 A user-friendly web application built to stream over 20 of Tunisia's most popular national radio stations.
@@ -274,7 +270,7 @@ const ProjectPage = () => {
                 <div className="updated-ButtonAnimation"><a className="demo" href="https://sakli-adem.github.io/radio1/radio.html" target="_blank" rel="noopener noreferrer">View Project</a></div>
               </div>
             </div>
-            {/* === FIN DESCRIPTION JDIDA === */}
+          
             <br /><br />
           </div>
         </div>
@@ -290,7 +286,7 @@ const ProjectPage = () => {
           <div className="updated-containerr">
             <p className="updated-title1" style={{ textDecoration: 'underline', textDecorationColor: 'rgb(85, 12, 93)' }}>Company Management</p>
             <br />
-            {/* === DESCRIPTION JDIDA HNA === */}
+ 
             <div className="updated-description">
               <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
                 A comprehensive web application for internal company management, handling inventory, customers, and invoicing.
@@ -308,7 +304,6 @@ const ProjectPage = () => {
                 <div className="updated-ButtonAnimation" onClick={() => alert('This project is not uploaded yet, check it soon')}>View Project</div>
               </div>
             </div>
-            {/* === FIN DESCRIPTION JDIDA === */}
             <br /><br />
           </div>
         </div>
@@ -325,7 +320,6 @@ const ProjectPage = () => {
             <p className="updated-title">MiniCar RPi4</p>
             {/* Na7it l-br zeydin, 5allit wa7ed barka */}
             <br />
-            {/* === DESCRIPTION JDIDA HNA === */}
             <div className="updated-description">
               <h4 style={{ textAlign: 'justify', fontWeight: 'bold' }}>
                 A foundational robotics project using a Raspberry Pi 4 to build and control a Bluetooth-enabled mini-car.
@@ -342,7 +336,6 @@ const ProjectPage = () => {
                 <div className="updated-ButtonAnimation" onClick={() => alert('This project is not uploaded yet, check it soon')}>View Project</div>
               </div>
             </div>
-            {/* === FIN DESCRIPTION JDIDA === */}
             <br /><br />
           </div>
         </div>
